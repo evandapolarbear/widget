@@ -1,0 +1,12 @@
+{
+  "name": "w6d5",
+  "version": "1.0.0",
+  "description": "[**Live Demo!**](https://appacademy.github.io/curriculum/widgets/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
