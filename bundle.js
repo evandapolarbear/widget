@@ -68,13 +68,14 @@
 	  content: "page 2" }, { title: "three", content: "page 3" }];
 	// import Weather from './weather';
 	
+	var location = Navigator.geolocation;
 	
 	document.addEventListener("DOMContentLoaded", function () {
 	  var root = document.getElementById("root");
-	  // const weather  = document.getElementById("weather");
+	  var weather = document.getElementById("weather");
 	  var clock = document.getElementById("clock");
 	  _reactDom2.default.render(_react2.default.createElement(_tabs2.default, { tabs: testTabs }), root);
-	  // ReactDOM.render(<Weather />, weather);
+	  _reactDom2.default.render(_react2.default.createElement(Weather, { location: location }), weather);
 	  _reactDom2.default.render(_react2.default.createElement(_clock2.default, null), clock);
 	});
 

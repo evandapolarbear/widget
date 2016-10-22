@@ -6,12 +6,13 @@ import Clock from './clock';
 
 const testTabs = [{title: "one", content: "page 1"}, {title: "two",
 content: "page 2"}, {title: "three", content: "page 3"}];
+const location = Navigator.geolocation;
 
 document.addEventListener("DOMContentLoaded", () =>{
   const root = document.getElementById("root");
-  // const weather  = document.getElementById("weather");
+  const weather  = document.getElementById("weather");
   const clock = document.getElementById("clock");
   ReactDOM.render(<Tabs tabs={testTabs} />, root);
-  // ReactDOM.render(<Weather />, weather);
+  ReactDOM.render(<Weather location={location} />, weather);
   ReactDOM.render(<Clock />, clock);
 });
